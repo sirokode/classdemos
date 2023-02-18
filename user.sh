@@ -105,7 +105,7 @@ update_conf()
 
 ############### MAIN ###################
 
-USER="apollo"
+USER="jenkinsworker"
 GROUP="groupx"
 passw="passwordx"
 
