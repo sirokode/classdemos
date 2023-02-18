@@ -105,7 +105,7 @@ update_conf()
 
 ############### MAIN ###################
 
-USER="jenkinsworker"
+USER="jenkins_worker"
 GROUP="groupx"
 passw="passwordx"
 
