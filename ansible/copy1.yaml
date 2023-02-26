@@ -1,0 +1,12 @@
+---
+ - name: test of copying
+   become: yes
+   hosts: test
+   tasks:
+    - name: Copy file with owner and permissions
+      copy:
+        src: /home/ubuntu/foo.conf
+        dest: /tmp/foo.conf
+        owner: foo
+        group: foo
+        mode: '0644'
