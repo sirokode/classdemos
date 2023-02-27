@@ -1,0 +1,9 @@
+---
+ - hosts: test
+   tasks:
+    - name: shell wth debug
+      shell:
+        cmd: ls >> test.rtf
+        chdir: /tmp
+      register: shell_output
+    - debug: var=shell_output
