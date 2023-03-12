@@ -1,0 +1,3 @@
+#aws_account,keybase_account,group
+admin,mcowiti,administrators
+dev01,mcowiti,developers
