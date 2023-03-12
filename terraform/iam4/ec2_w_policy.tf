@@ -14,18 +14,17 @@ resource "aws_iam_user_policy" "lb_ro" {
 
   policy = <<EOF
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": [
-        "ec2:Describe*"
-      ],
-      "Effect": "Allow",
-      "Resource": "*"
-    }
-  ]
+ "Version": "2012-10-17",
+ "Statement": [
+{
+   "Effect": "Allow",
+   "Action": [
+     "ec2:Describe*"
+   ],
+   "Resource": "*"
+}]
 }
-EOF
+ EOF
 }
 
 resource "aws_iam_user_login_profile" "u" {
