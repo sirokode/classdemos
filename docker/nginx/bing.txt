@@ -1,0 +1,1 @@
+docker run --name mynginx2 --mount type=bind source=/var/www,target=/usr/share/nginx/html,readonly --mount type=bind,source=/var/nginx/conf,target=/etc/nginx/conf,readonly  -p 80:80 -d nginx
